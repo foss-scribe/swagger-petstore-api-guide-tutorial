@@ -71,9 +71,8 @@ To begin, create a simple HTML page.
 
 ```html
 <html>
-    <title>Swagger Petstore API Example</title>
 <head>
-
+    <title>Swagger Petstore API Example</title>
 </head>
 <body>
 
@@ -95,15 +94,15 @@ Let's add a script element and begin writing our code by fetching the findByStat
 
 ```javascript
 fetch('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
-    .then((response) => response.json())
-    .then((data) => {
-        let petList = document.getElementById("petList");
-        data.forEach((pet) => {
-            let li = document.createElement('li');
-            li.innerHTML = pet.name;
-            petList.appendChild(li)
-        });
-    })
+.then((response) => response.json())
+.then((data) => {
+    let petList = document.getElementById("petList");
+    data.forEach((pet) => {
+        let li = document.createElement('li');
+        li.innerHTML = pet.name;
+        petList.appendChild(li)
+    });
+})
 ```
 
 If you examine the output, you might notice the API returns some test data, which we don't want on our rendered page. To remove it, use the filter function to return only pets named `doggy`, `fish` and `cat`.
@@ -136,9 +135,8 @@ The complete HTML and JavaScript is included below.
 
 ```html 
 <html>
-    <title>Swagger Petstore API Example</title>
 <head>
-
+    <title>Swagger Petstore API Example</title>
 </head>
 <body>
 
