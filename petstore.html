@@ -1,0 +1,30 @@
+<html>
+    <title>Swagger Petstore API Example</title>
+<head>
+
+</head>
+<body>
+
+<h1>Pet list</h1>
+<ul id="petList"></ul>
+
+<script type="text/javascript">
+    fetch('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
+    .then((response) => response.json())
+    .then((data) => {
+        let petList = document.getElementById("petList");
+        data = data.filter((pet) => {
+            return pet.name.toLowerCase() == 'doggie' || pet.name.toLowerCase() == 'fish' || pet.name.toLowerCase() == 'cat';
+        })
+        data.forEach((pet) => {
+            let li = document.createElement('li');
+            li.innerHTML = pet.name;
+            petList.appendChild(li)
+        });
+  });
+  
+
+</script>
+</body>
+
+</html>
