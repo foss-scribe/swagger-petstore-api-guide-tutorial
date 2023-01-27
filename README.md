@@ -12,7 +12,7 @@ In the `Building the HTML pet store` section, I walk the reader through building
 
 This section puts into practice what they've learnt in the API guide (`About the Petstore API`) and combines this with their assumed HTML/JavaScript and REST API knowledge. Because of their assumed knowledge, I didn't go into tremendous detail, only highlighting essential information like the requirement to handle the Promises returned by Fetch, which might throw developers used to working in Axios or a front-end framework that abstracts them away.
 
-Note that I haven't styled the output as CSS wasn't a listed requirement, and I didn't think it necessary. I only rendered the `name` field because it was the API's only consistently helpful bit of data.
+Note that I haven't styled the output as CSS wasn't a listed requirement, and I didn't think it necessary. I also didn't add a loading state, though this would be trivial to do in the promise handler by making a div with a 'loading' message that disappears when the data is rendered. I only rendered the `name` field because it was the API's only consistently helpful bit of data.
 
 I've kept the tone deliberately conversational and informal, per the brief and my preferred style, because I think it improves a reader's retention and makes the document more approachable.
 
