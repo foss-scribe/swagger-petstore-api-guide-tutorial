@@ -149,7 +149,9 @@ The complete HTML and JavaScript is included below.
     .then((data) => {
         let petList = document.getElementById("petList");
         data = data.filter((pet) => {
-            return pet.name == 'doggie' || pet.name == 'fish';
+            if (pet.name) {
+                return pet.name.toLowerCase() == 'doggie' || pet.name.toLowerCase() == 'fish' || pet.name.toLowerCase() == 'cat';
+            }
         })
         data.forEach((pet) => {
             let li = document.createElement('li');

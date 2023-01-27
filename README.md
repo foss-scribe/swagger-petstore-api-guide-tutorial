@@ -17,3 +17,6 @@ Note that I haven't styled the output as CSS wasn't a listed requirement, and I 
 I've kept the tone deliberately conversational and informal, per the brief and my preferred style, because I think it improves a reader's retention and makes the document more approachable.
 
 For the sake of completeness, I've added a `Next steps` section to serve as a concluding statement, call to action and a pointer to further reading.
+
+
+NOTE: I made an additional code update the day after yesterday's (Friday) commit to handle null name values. I didn't appreciate how much this API would change with lots of people using it publicly with little in the way of field validation.
