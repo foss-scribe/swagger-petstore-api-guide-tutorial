@@ -21,4 +21,4 @@ For the sake of completeness, I've added a `Next steps` section to serve as a co
 
 **NOTE**: I made an additional code update the day after yesterday's (Friday) commit to handle null name values. I didn't appreciate how much this API would change with lots of people using it publicly with little in the way of field validation.
 
-In case the API proves unreliable, I've created an alternative endpoint using a Cloud Function (written in Python, and deployed to DigitalOcean) that returns a dozen pets matching the scheme. It's commented out in petstore.html JavaScript.
+In case the API proves unreliable, I've created an alternative endpoint using a Cloud Function (written in Python, and deployed to DigitalOcean) that returns a dozen pets matching the schema I originally coded against. The URL is commented out in the petstore.html JavaScript block.
