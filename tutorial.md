@@ -127,6 +127,10 @@ fetch('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
 ```
 Check or refresh the output to ensure the returned list of pets matches your queries and filters.
 
+Your rendered page should display the list of available pets.
+
+![Final HTML page](images/list.png)
+
 The complete HTML and JavaScript is included below.
 
 
