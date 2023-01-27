@@ -8,6 +8,8 @@
 <ul id="petList"></ul>
 
 <script type="text/javascript">
+    // In case Swagger's API is unreliable or has changed (again) to break my code, use the following URL instead as described in the README
+    //fetch('https://faas-syd1-c274eac6.doserverless.co/api/v1/web/fn-bc951eac-3a04-4e7f-ad36-4c08d581424b/PetStore/PetStore')
     fetch('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
     .then((response) => response.json())
     .then((data) => {
